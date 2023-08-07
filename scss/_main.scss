@@ -1,0 +1,139 @@
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+// 第一欄 nav
+
+.nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navLogo {
+  width: auto;
+  height: 72px;
+}
+
+.nav a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: block;
+}
+
+// 第二塊 banner
+.banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .container {
+  height: 787px;
+}
+
+.banner .textbox {
+  padding-top: 296px;
+  margin: 0 0 0 auto;
+  width: 576px;
+  text-align: right;
+}
+
+// 第三塊 用專業的心做專業的事
+.point {
+  width: 306px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.point img {
+  height: 100px;
+  width: 100px;
+}
+
+// 第四塊  經典系列鏡框
+.series li {
+  max-width: 33.3%;
+  // flex: 1;
+}
+// 不知道為什麼li下面會有一個詭異的空間
+// 不知道要怎麼讓他一起縮小而非其中個一直縮小而已
+// 好像要用flex?嗎
+// 求助教解惑 QAQ
+
+// 第五塊 聯名
+.collab {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.collab p {
+  background-color: white;
+}
+
+// 第六塊 顧客推薦
+.customer li {
+  max-width: 25%;
+  // 陰影
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.customer .card {
+  height: 205px;
+}
+
+// 第七塊 聯絡我們
+.smallContainer {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.pink label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.fullWidth input,
+textarea {
+  width: 100%;
+  text-indent: 12px;
+}
+
+.policyAgree label,
+input {
+  display: inline;
+}
+
+// 第八塊 表尾
+
+.footer a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: block;
+}
+
+.footerHead img {
+  width: 48px;
+  height: 48px;
+}
+
+.footerBody span {
+  font-size: 36px;
+}
+
+.footerFoot {
+  border-top: 1px solid white;
+}
+
+.footerFoot a {
+  font-size: 14px;
+}

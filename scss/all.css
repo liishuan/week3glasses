@@ -1,0 +1,476 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: 1px solid pink;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Noto Serif TC", Roboto, "Bruno Ace SC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.roboto {
+  font-family: Roboto;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-7 {
+  margin-bottom: 28px;
+}
+
+.mb-12 {
+  margin-bottom: 48px;
+}
+
+.mr-4 {
+  margin-right: 16px;
+}
+
+.mr-5 {
+  margin-right: 20px;
+}
+
+.mr-6 {
+  margin-right: 24px;
+}
+
+.mr-8 {
+  margin-right: 32px;
+}
+
+.mr-12 {
+  margin-right: 48px;
+}
+
+.mr-16 {
+  margin-right: 64px;
+}
+
+.pt-8 {
+  padding-top: 32px;
+}
+
+.pt-12 {
+  padding-top: 48px;
+}
+
+.pb-8 {
+  padding-bottom: 32px;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+.p-20 {
+  padding: 80px;
+}
+
+.fz-3-5 {
+  font-size: 14px;
+}
+
+.fz-4 {
+  font-size: 16px;
+}
+
+.fz-5 {
+  font-size: 20px;
+}
+
+.fz-6 {
+  font-size: 24px;
+}
+
+.fz-9 {
+  font-size: 36px;
+}
+
+.fz-12 {
+  font-size: 48px;
+}
+
+.fz-16 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.textWhite {
+  color: #ffffff;
+}
+
+.textGray {
+  color: #707070;
+}
+
+.textDarkRed {
+  color: #650300;
+}
+
+.textLightRed {
+  color: #aa0601;
+}
+
+.red {
+  background-color: #aa0601;
+}
+
+.pink {
+  background-color: #fbf2f2;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.directionColumn {
+  flex-direction: column;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.itemCenter {
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #aa0601;
+  color: white;
+}
+
+.btnSmall {
+  font-family: "Noto Sans TC Medium";
+  padding: 6px 12px;
+}
+
+.btnBig {
+  font-family: "Noto Sans TC Bold";
+  padding: 16px 176px;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.itemRight {
+  justify-content: flex-end;
+}
+
+.btn span {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navLogo {
+  width: auto;
+  height: 72px;
+}
+
+.nav a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: block;
+}
+
+.banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .container {
+  height: 787px;
+}
+
+.banner .textbox {
+  padding-top: 296px;
+  margin: 0 0 0 auto;
+  width: 576px;
+  text-align: right;
+}
+
+.point {
+  width: 306px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.point img {
+  height: 100px;
+  width: 100px;
+}
+
+.series li {
+  max-width: 33.3%;
+}
+
+.collab {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.collab p {
+  background-color: white;
+}
+
+.customer li {
+  max-width: 25%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.customer .card {
+  height: 205px;
+}
+
+.smallContainer {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.pink label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.fullWidth input,
+textarea {
+  width: 100%;
+  text-indent: 12px;
+}
+
+.policyAgree label,
+input {
+  display: inline;
+}
+
+.footer a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: block;
+}
+
+.footerHead img {
+  width: 48px;
+  height: 48px;
+}
+
+.footerBody span {
+  font-size: 36px;
+}
+
+.footerFoot {
+  border-top: 1px solid white;
+}
+
+.footerFoot a {
+  font-size: 14px;
+}/*# sourceMappingURL=all.css.map */
