@@ -256,10 +256,6 @@ a {
   font-size: 64px;
 }
 
-h2 {
-  font-size: 64px;
-}
-
 .regular {
   font-weight: 400;
 }
@@ -376,6 +372,39 @@ h2 {
   display: block;
 }
 
+.nav > .container {
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .nav {
+    padding: 16px 36px;
+  }
+}
+@media (max-width: 768px) {
+  .nav > .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .nav {
+    padding: 0px;
+  }
+  .nav h1 {
+    padding: 0px 0px 0px 15px;
+  }
+  .nav ul {
+    flex-wrap: wrap;
+  }
+  .nav li {
+    border: 1px solid white;
+    margin-right: 0;
+    width: 50%;
+  }
+  .navItem a {
+    text-align: center;
+    padding: 12px 62px;
+  }
+}
 .banner {
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
   background-position: center;
@@ -389,10 +418,38 @@ h2 {
 .banner .textbox {
   padding-top: 296px;
   margin: 0 0 0 auto;
-  width: 576px;
+  max-width: 576px;
   text-align: right;
 }
 
+@media (max-width: 992px) {
+  .banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container {
+    height: 396px;
+  }
+  .banner .textbox {
+    padding-top: 144px;
+    margin-right: 14px;
+  }
+  .banner .fz-9 {
+    font-size: 16px;
+  }
+  .banner .fz-16 {
+    font-size: 24px;
+  }
+  .banner h2 {
+    margin-bottom: 8px;
+  }
+  .banner a {
+    font-size: 20px;
+  }
+}
 .point {
   width: 306px;
   display: flex;
@@ -405,10 +462,61 @@ h2 {
   width: 100px;
 }
 
+.pink {
+  padding: 80px;
+}
+
+@media (max-width: 992px) {
+  .points {
+    padding: 80px 36px 56px 36px;
+  }
+  .point {
+    width: 48%;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .points {
+    padding: 40px 12px 8px 12px;
+  }
+  .points h3 {
+    font-size: 24px;
+  }
+  .point {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
 .series li {
   max-width: 33.3%;
 }
 
+@media (max-width: 992px) {
+  .classic {
+    padding: 80px 80px 56px 80px;
+  }
+  .series {
+    flex-wrap: wrap;
+  }
+  .series li {
+    max-width: 336px;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .classic {
+    padding: 40px 12px 16px 12px;
+  }
+  .classic h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .series li {
+    max-width: 348px;
+  }
+}
 .collab {
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
   background-position: center;
@@ -419,6 +527,26 @@ h2 {
   background-color: white;
 }
 
+@media (max-width: 992px) {
+  .collab ul {
+    flex-wrap: wrap;
+  }
+  .collab li {
+    margin-bottom: 24px;
+  }
+  .collab {
+    padding: 80px 36px 56px 36px;
+  }
+}
+@media (max-width: 768px) {
+  .collab {
+    padding: 40px 12px 16px 12px;
+  }
+  .collab h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
 .customer li {
   max-width: 25%;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
@@ -430,6 +558,37 @@ h2 {
   height: 205px;
 }
 
+@media (max-width: 992px) {
+  .customer {
+    padding: 80px 36px 56px 36px;
+  }
+  .customer ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .customer li {
+    max-width: 48%;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .customer {
+    padding: 40px 12px 24px 12px;
+  }
+  .customer h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .customer ul {
+    justify-content: center;
+  }
+  .customer li {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+}
 .smallContainer {
   max-width: 636px;
   margin: 0 auto;
@@ -451,6 +610,23 @@ input {
   display: inline;
 }
 
+@media (max-width: 992px) {
+  .contact {
+    padding: 80px 96px 80px 96px;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 14px 40px 14px;
+  }
+  .contact h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .btnBig {
+    padding: 16px 142px;
+  }
+}
 .footer a {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -473,4 +649,58 @@ input {
 
 .footerFoot a {
   font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 48px 36px 0px 36px;
+  }
+  .footerHead img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 24px 16px 16px 16px;
+  }
+  .footerHeadBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 24px;
+  }
+  .footerHead {
+    order: 2;
+  }
+  .footerBody {
+    order: 1;
+    padding-bottom: 0;
+  }
+  .footerBody .mr-5 {
+    margin-right: 10px;
+  }
+  .footerBody span, .fz-9 {
+    font-size: 16px;
+  }
+  .footerMenu {
+    display: none;
+  }
+  .footerHead img {
+    width: 24px;
+    height: 24px;
+  }
+  .footerFoot {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footerFoot p {
+    margin-bottom: 8px;
+  }
+  .footerFoot ul {
+    flex-direction: column;
+  }
+  .footerFoot li {
+    margin-bottom: 8px;
+  }
 }/*# sourceMappingURL=all.css.map */
