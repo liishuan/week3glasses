@@ -133,7 +133,6 @@ table {
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 1px solid pink;
 }
 
 img {
@@ -603,6 +602,7 @@ a {
 textarea {
   width: 100%;
   text-indent: 12px;
+  background: transparent;
 }
 
 .policyAgree label,
@@ -680,7 +680,8 @@ input {
   .footerBody .mr-5 {
     margin-right: 10px;
   }
-  .footerBody span, .fz-9 {
+  .footerBody span,
+  .fz-9 {
     font-size: 16px;
   }
   .footerMenu {

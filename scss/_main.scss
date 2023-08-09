@@ -22,43 +22,42 @@
   display: block;
 }
 
-.nav>.container {
+.nav > .container {
   align-items: center;
 }
 
 // 平板
-@media(max-width:992px){
-  .nav{
-    padding:16px 36px ;
+@media (max-width: 992px) {
+  .nav {
+    padding: 16px 36px;
   }
 }
 
 // 平板以下
-@media(max-width:768px){
-.nav>.container {
-  flex-direction: column;
-  align-items: start;
-}
-.nav {
-padding: 0px;
-}
-
-.nav h1{
-  padding: 0px 0px 0px 15px;
+@media (max-width: 768px) {
+  .nav > .container {
+    flex-direction: column;
+    align-items: start;
   }
-.nav ul{
-  flex-wrap: wrap;
-}
-.nav li{
-border: 1px solid white;
-margin-right: 0;
-width: 50%;
-}
-.navItem a{
-  text-align: center;
-  padding: 12px 62px;
-}
+  .nav {
+    padding: 0px;
+  }
 
+  .nav h1 {
+    padding: 0px 0px 0px 15px;
+  }
+  .nav ul {
+    flex-wrap: wrap;
+  }
+  .nav li {
+    border: 1px solid white;
+    margin-right: 0;
+    width: 50%;
+  }
+  .navItem a {
+    text-align: center;
+    padding: 12px 62px;
+  }
 }
 
 // 第二塊 banner
@@ -83,7 +82,7 @@ width: 50%;
 }
 
 // 平板
-@media(max-width:992px){
+@media (max-width: 992px) {
   .banner {
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
     background-position: center;
@@ -92,7 +91,7 @@ width: 50%;
 }
 
 // 平板以下
-@media(max-width:768px){
+@media (max-width: 768px) {
   .banner .container {
     height: 396px;
   }
@@ -102,20 +101,19 @@ width: 50%;
     margin-right: 14px;
   }
 
-.banner .fz-9{
-  font-size: 16px;
+  .banner .fz-9 {
+    font-size: 16px;
+  }
+  .banner .fz-16 {
+    font-size: 24px;
+  }
+  .banner h2 {
+    margin-bottom: 8px;
+  }
+  .banner a {
+    font-size: 20px;
+  }
 }
-.banner .fz-16{
-  font-size: 24px;
-}
-.banner h2{
-  margin-bottom: 8px;
-}
-.banner a{
-  font-size: 20px;
-}
-}
-
 
 // 第三塊 用專業的心做專業的事
 .point {
@@ -130,13 +128,13 @@ width: 50%;
   width: 100px;
 }
 
-.pink{
+.pink {
   padding: 80px;
 }
 
 // 平板
-@media(max-width:992px){
-  .points{
+@media (max-width: 992px) {
+  .points {
     padding: 80px 36px 56px 36px;
   }
   .point {
@@ -146,19 +144,18 @@ width: 50%;
 }
 
 // 平板以下
-@media(max-width:768px){
-  .points{
+@media (max-width: 768px) {
+  .points {
     padding: 40px 12px 8px 12px;
   }
 
-  .points h3{
+  .points h3 {
     font-size: 24px;
   }
   .point {
     width: 100%;
     margin-bottom: 32px;
   }
-
 }
 
 // 第四塊  經典系列鏡框
@@ -172,11 +169,11 @@ width: 50%;
 // 求助教解惑 QAQ
 
 // 平板
-@media(max-width:992px){
-  .classic{
+@media (max-width: 992px) {
+  .classic {
     padding: 80px 80px 56px 80px;
   }
-  .series{
+  .series {
     flex-wrap: wrap;
   }
   .series li {
@@ -189,14 +186,13 @@ width: 50%;
 // 請問助教，在沒有響應式之前可以把padding:20px; 用.p-20放在class裡面使用，但用到響應式的時候要通常padding會變小，要做更改的話只有上面這種方式去做更改嗎?還是會直接把定義p-20這個class名稱裡面的內容，變成.p-20{padding:10px;}之類的?謝謝助教~~
 
 // 平板以下
-@media(max-width:768px){
-  .classic{
+@media (max-width: 768px) {
+  .classic {
     padding: 40px 12px 16px 12px;
   }
-  .classic h3{
+  .classic h3 {
     font-size: 24px;
     margin-bottom: 24px;
-
   }
   .series li {
     max-width: 348px;
@@ -214,24 +210,24 @@ width: 50%;
   background-color: white;
 }
 // 平板
-@media(max-width:992px){
-  .collab ul{
+@media (max-width: 992px) {
+  .collab ul {
     flex-wrap: wrap;
   }
-  .collab li{
+  .collab li {
     margin-bottom: 24px;
   }
-  .collab{
+  .collab {
     padding: 80px 36px 56px 36px;
   }
 }
 
 // 平板以下
-@media(max-width:768px){
-  .collab{
+@media (max-width: 768px) {
+  .collab {
     padding: 40px 12px 16px 12px;
   }
-  .collab h3{
+  .collab h3 {
     font-size: 24px;
     margin-bottom: 24px;
   }
@@ -251,15 +247,15 @@ width: 50%;
 }
 
 // 平板
-@media(max-width:992px){
-  .customer{
+@media (max-width: 992px) {
+  .customer {
     padding: 80px 36px 56px 36px;
   }
-  .customer ul{
+  .customer ul {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .customer li{
+  .customer li {
     max-width: 48%;
     margin-right: 0px;
     margin-bottom: 24px;
@@ -267,27 +263,24 @@ width: 50%;
 }
 
 //平板以下
-@media(max-width:768px){
-  .customer{
+@media (max-width: 768px) {
+  .customer {
     padding: 40px 12px 24px 12px;
-
   }
-  .customer h3{
+  .customer h3 {
     font-size: 24px;
     margin-bottom: 24px;
   }
 
-  .customer ul{
+  .customer ul {
     justify-content: center;
   }
-  .customer li{
+  .customer li {
     max-width: 100%;
     margin-right: 0px;
     margin-bottom: 16px;
   }
-
 }
-
 
 // 第七塊 聯絡我們
 .smallContainer {
@@ -304,6 +297,7 @@ width: 50%;
 textarea {
   width: 100%;
   text-indent: 12px;
+  background: transparent;
 }
 
 .policyAgree label,
@@ -312,19 +306,18 @@ input {
 }
 
 // 平板
-@media(max-width:992px){
-  .contact{
+@media (max-width: 992px) {
+  .contact {
     padding: 80px 96px 80px 96px;
   }
 }
 
 // 平板以下
-@media(max-width:768px){
-  .contact{
+@media (max-width: 768px) {
+  .contact {
     padding: 40px 14px 40px 14px;
-
   }
-  .contact h3{
+  .contact h3 {
     font-size: 24px;
     margin-bottom: 24px;
   }
@@ -332,11 +325,7 @@ input {
   .btnBig {
     padding: 16px 142px;
   }
-
 }
-
-
-
 
 // 第八塊 表尾
 
@@ -365,8 +354,8 @@ input {
 }
 
 // 平板
-@media(max-width:992px){
-  .footer{
+@media (max-width: 992px) {
+  .footer {
     padding: 48px 36px 0px 36px;
   }
   .footerHead img {
@@ -376,50 +365,51 @@ input {
 }
 
 // 平板以下
-@media(max-width:768px){
-  .footer{
+@media (max-width: 768px) {
+  .footer {
     padding: 24px 16px 16px 16px;
   }
-  .footerHeadBody{
+  .footerHeadBody {
     display: flex;
     justify-content: space-between;
     align-items: start;
     padding-bottom: 24px;
   }
-  .footerHead{
-    order:2;
+  .footerHead {
+    order: 2;
   }
-  .footerBody{
-    order:1;
+  .footerBody {
+    order: 1;
     padding-bottom: 0;
   }
 
-  .footerBody .mr-5{
+  .footerBody .mr-5 {
     margin-right: 10px;
   }
-  .footerBody span, .fz-9 {
+  .footerBody span,
+  .fz-9 {
     font-size: 16px;
   }
-.footerMenu{
-  display: none;
-}
+  .footerMenu {
+    display: none;
+  }
 
-.footerHead img {
-  width: 24px;
-  height: 24px;
-}
+  .footerHead img {
+    width: 24px;
+    height: 24px;
+  }
 
-.footerFoot{
-  flex-direction: column;
-  padding: 0;
-}
-.footerFoot p{
-  margin-bottom: 8px;
-}
-.footerFoot ul{
-flex-direction: column;
-}
-.footerFoot li{
-margin-bottom: 8px;
-}
+  .footerFoot {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footerFoot p {
+    margin-bottom: 8px;
+  }
+  .footerFoot ul {
+    flex-direction: column;
+  }
+  .footerFoot li {
+    margin-bottom: 8px;
+  }
 }
