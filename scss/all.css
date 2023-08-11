@@ -393,6 +393,7 @@ a {
   }
   .nav ul {
     flex-wrap: wrap;
+    width: 100%;
   }
   .nav li {
     border: 1px solid white;
@@ -401,7 +402,8 @@ a {
   }
   .navItem a {
     text-align: center;
-    padding: 12px 62px;
+    padding: 12px;
+    font-size: 16px;
   }
 }
 .banner {
